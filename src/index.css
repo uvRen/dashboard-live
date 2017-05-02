@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f3f3f3 !important;
+}
+
+.main-app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.dnd-container {
+    border: 2px;
+    border-radius: 6px;
+    min-height: 75px;
+    position: relative;
+}
+
+.dnd-container .can-drop {
+    border-color: #aaa;
+}
+
+.dnd-container .is-over-current {
+    background-color: #fafafa;
+}
+
+.dnd-item {
+    cursor: move !important;
+}
+
+.dnd-item > div {
+    cursor: move !important;
+}
+
+.dnd-item .isDragging {
+    opacity: 0.5;
+}
+
+.item.preview {
+    opacity: 0.5;
+    width: auto;
+}
+
+.pivot-popover-inner {
+    padding: 8px; //TODO: use muiTheme.spacing.desktopGutterMini
+}
+
+.flex-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap
+}
+
+.flex-container>.flex-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto
+}
+
+.flex-container.flex-gutters {
+    margin: -12px
+}
+
+.flex-container.flex-gutters>* {
+    margin: 12px
+}
+
+.flex-container.flex-gutters-less {
+    margin: -8px
+}
+
+.flex-container.flex-gutters-less>* {
+    margin: 8px
+}
+
+.flex-container.flex-gutters-mini {
+    margin: -4px
+}
+
+.flex-container.flex-gutters-mini>* {
+    margin: 4px
+}
+
+.flex-grow-1 {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    overflow: auto
+}
+
+.flex-column {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.flex-start {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start
+}
+
+.flex-end {
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end
+}
+
+.logic-selector {
+    border-bottom-right-radius: 9px;
+    height: 48px;
+    padding-left: 16px
+}
+
+.logic-actions {
+    padding-right: 8px
+}
+
+.custom-filter-expression {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
